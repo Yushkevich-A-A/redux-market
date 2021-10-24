@@ -1,0 +1,71 @@
+.item {
+    position: relative;
+    overflow: hidden;
+    width: 240px;
+    padding: 20px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+.item-img-block {
+    height: 200px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-img {
+    width: 100%;
+}
+
+.item-price-block {
+    display: flex;
+    align-items: center;
+}
+
+.item-current-price {
+    width: 50%;
+    padding: 5px 10px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.item-old-price {
+    width: 50%;
+    text-align: right;
+    padding: 5px 10px;
+    font-size: 18px;
+    font-weight: 400;
+    color: gray;
+    text-decoration: line-through;
+}
+
+.item-old-price::after,
+.item-current-price::after {
+    content:"\20BD";
+}
+
+.item-title {
+    color: blue;
+    font-size: 24px;
+}
+
+.item-discount {
+    position:absolute;
+    top: 25px;
+    left: 25px;
+    width: 70px;
+    height: 70px;
+    font-size: 20px;
+    background-color: red;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-discount::after {
+    content: '%';
+}

@@ -1,0 +1,10 @@
+.block-goods-h2 {
+    font-size: 48px;
+}
+
+.block-goods-ul {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
